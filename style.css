@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "futura";
+}
+
+.name {
+  font-size: 70px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.socials-left {
+  position: fixed;
+  bottom: 0;
+  left: 1%;
+}
+
+.social {
+  transition: fill 0.2s ease, transform 1s ease;
+}
+
+.social:hover {
+  fill: lightseagreen;
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+
+.line {
+  width: 1px;
+  align-self: center;
+  background-color: lightseagreen;
+}
+
+.line1 {
+  height: 200px;
+}
+
+.line2 {
+  height: 100px;
+  margin-right: 4px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+}
+
+.margin-lg {
+  margin: 0px 100px;
+}
+
+.socials-right {
+  position: fixed;
+  gap: 10px;
+  align-items: center;
+  right: 0;
+  bottom: 0;
+}
+
+#email {
+  writing-mode: vertical-lr;
+  transform: translateY(0);
+  transition: transform 1s ease, color 0.2s ease;
+}
+
+#email:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  color: lightseagreen;
+}
+
+.blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  align-content: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.block {
+  max-width: 350px;
+}
+
+.block-header {
+  font-size: 1.3rem;
+  font-style: italic;
+  letter-spacing: 0.8px;
+}
+
+.block-desc {
+  margin-top: 10px;
+  height: 40px;
+  color: rgba(0, 0, 0, 0.538);
+}
