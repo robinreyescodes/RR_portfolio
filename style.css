@@ -7,10 +7,22 @@
 
 .name {
   font-size: 70px;
+  position: relative;
+  left: 10%;
 }
 
 .title {
   font-size: 30px;
+  position: relative;
+  left: 10%;
+}
+
+.hero {
+  margin-top: 40px;
+}
+
+.robin {
+  border-radius: 5px;
 }
 
 .socials-left {
@@ -50,10 +62,6 @@
   width: 30px;
 }
 
-.margin-lg {
-  margin: 0px 100px;
-}
-
 .socials-right {
   position: fixed;
   gap: 10px;
@@ -66,6 +74,8 @@
   writing-mode: vertical-lr;
   transform: translateY(0);
   transition: transform 1s ease, color 0.2s ease;
+  text-decoration: none;
+  color: black;
 }
 
 #email:hover {
@@ -77,11 +87,11 @@
 .blocks {
   display: grid;
   grid-template-columns: repeat(3, 300px);
+
   align-content: center;
   justify-content: center;
-  height: 60vh;
+  height: 100vh;
   text-align: center;
-  margin: 0 auto;
   gap: 60px;
 }
 
