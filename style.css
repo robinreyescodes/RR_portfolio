@@ -28,7 +28,7 @@
 
 }
 
-#hero {
+.hero {
     display:grid;
     grid-template-columns: 300px 700px;
     grid-template-rows: auto;
@@ -42,7 +42,9 @@
     left:50%;
     transform:translate(-50%, -50%);
     z-index:-1;
+    transition: opacity 1s;
 }
+
 
 
 #hero-header {
@@ -211,15 +213,37 @@
     background-color:white;
     width: 90%;
     margin:0 auto;
+    z-index:-10000;
+    animation:disappear 0.2s linear;
     display:none;
-    z-index:10;
-    transition: display 1s ease;
 }
+
+.disappear{
+    animation:disappear 1s linear;
+}
+
+@keyframes disappear {
+    0% {
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes reappear {
+    0% {
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
 
 .show-me {
     display: block;
-
-
+    transition:display 10s ease;
 }
 
 .vid {
@@ -257,7 +281,7 @@
     animation-name: yo;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    z-index:-1;
+    z-index:10;
     cursor:pointer;
     transition:color 0.5s;
 }
@@ -266,13 +290,20 @@
     color:lightseagreen
 }
 
+.bounce-work,
+.bounce-about{
+
+    transition:opacity 0.4s;
+}
+
+
 .scroll {
     position:absolute;
     bottom:4%;
     text-align:center;
     left:50%;
     transform:translateX(-50%);
-    z-index:-1;
+    z-index:10;
     /*cursor:pointer;*/
 }
 
