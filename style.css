@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "futura";
+
 }
 
 .name {
@@ -17,14 +18,60 @@
     left: 10%;
 }
 
-.hero {
-    margin-top: 40px;
+#hero {
+    display:grid;
+    grid-template-columns: 300px 700px;
+    grid-template-rows: auto;
+    /*display:flex;*/
+    align-items: center;
+    grid-column-gap: 40px;
+    /*gap:100px;*/
+    justify-content: center;
+
+}
+
+
+
+#penis {
+    flex-wrap: wrap;
+    grid-column:1/3;
+}
+#hero-header {
+    font-size: 5.4rem;
+
+}
+
+#hero-about {
+    font-size:1rem;
+    line-height: 1.5;
 }
 
 .robin {
     border-radius: 5px;
 }
 
+#robins-photo {
+
+    height:300px;
+    width:300px;
+    border-radius:50%;
+}
+
+#icons-slide {
+    border:1px solid black;
+    grid-column:1/3;
+
+    overflow:hidden;
+}
+
+
+#icons {
+    display:flex;
+    justify-content: space-evenly;
+    position:relative;
+    left:100%;
+    animation: slide-in 10s ease infinite
+}
 .socials-left {
 
     position: fixed;
@@ -189,5 +236,14 @@
     }
     100% {
         bottom: 6%;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        left:100%;
+    }
+    100% {
+        left:-70%
     }
 }
