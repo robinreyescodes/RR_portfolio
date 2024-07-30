@@ -55,8 +55,9 @@
 
 
 #hero-about {
-    font-size:1rem;
+    font-size:1.2rem;
     line-height: 1.5;
+
 }
 
 .robin {
@@ -72,10 +73,8 @@
 
 #icons-slide {
     display:flex;
-
     grid-column:1/3;
     overflow:hidden;
-
 }
 
 .icons {
@@ -111,6 +110,8 @@
     left: 1%;
     z-index:1000;
 }
+
+
 
 
 
@@ -305,6 +306,49 @@
     transform:translateX(-50%);
     z-index:10;
     /*cursor:pointer;*/
+}
+
+@media (max-width: 900px) {
+    .socials-left {
+        padding-top:40px;
+        position:relative;
+        top:0;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width:100%;
+    }
+    .socials-right {
+        display:none;
+    }
+    .hero {
+        display:flex;
+        flex-direction: column;
+        text-align:center;
+
+        width:100vw;
+    }
+
+    #hero-header {
+        font-size:4rem;
+    }
+
+    #hero-about {
+        margin:0 20px;
+    }
+
+    .blocks {
+        margin-top:40px;
+        height:1000px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .line {
+        display:none;
+    }
 }
 
 
