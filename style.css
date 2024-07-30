@@ -374,7 +374,8 @@
         max-width:400px;
     }
     #robins-photo {
-        margin-bottom:40px;
+        width:200px;
+        height:200px;
     }
     .icon-imgs {
         height:90px;
