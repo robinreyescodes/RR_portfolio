@@ -372,6 +372,7 @@
     #hero-about {
         font-size: 0.7rem;
         max-width:400px;
+        margin:0 12px;
     }
     #robins-photo {
         width:200px;
