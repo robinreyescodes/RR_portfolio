@@ -1,60 +1,55 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Robin Reyes | Software Engineer</title>
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="Images/favicon-32x32.png"
-        />
-        <link rel="stylesheet" href="style.css">
-        <script src="app.js" defer></script>
-    </head>
-    <body>
-            <section id="hero-sec">
-                <div class="hero">
-                    <img src="./Images/Mev2.jpg" id="robins-photo">
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import logo from "../src/assets/Images/Me.jpg"
+import {cssImage, jssImage} from "./index.js";
+import './App.css'
+
+function App() {
+
+
+  return (
+    <>
+        <section id="hero-sec">
+            <div className="hero">
+                <img src={logo} className="object-cover h-[300px] w-[300px] rounded-full" />
                     <div id="hero-info">
                         <p id="hero-header">Robin Reyes</p>
                         <p id="hero-about">is a software engineer with over 5 years of programming experience specializing in front-end technologies such as
                             JavaScript, React, HTML & CSS. Alongside his passion for web development, Robin is knowledgeable in other languages such as Java,
                             Python, C++ and SQL. He is a
-                        recent graduate from San Francisco State University, receiving his Bachelors of Science degree
-                        in Computer Science. </p>
+                            recent graduate from San Francisco State University, receiving his Bachelors of Science degree
+                            in Computer Science. </p>
                     </div>
                     <div id="icons-slide">
-                        <div class="icons ico-1">
-                            <img src="./Images/programing.png" class="icon-imgs">
-                            <img src="./Images/icons8-python-480.png" class="icon-imgs">
-                            <img src="./Images/icons8-java-480.png" class="icon-imgs">
-                            <img src="./Images/icons8-html-480.png" class="icon-imgs">
+                        <div className="icons ico-1">
+                            <img src="RobinReyes-Portfolio/src/assets/Images/programing.png" className="icon-imgs"/>
+                                <img src="RobinReyes-Portfolio/src/assets/Images/icons8-python-480.png" className="icon-imgs"/>
+                                    <img src="RobinReyes-Portfolio/src/assets/Images/icons8-java-480.png" className="icon-imgs"/>
+                                        <img src="RobinReyes-Portfolio/src/assets/Images/icons8-html-480.png" className="icon-imgs"/>
 
                         </div>
-                        <div class="icons ico-2">
-                            <img src="./Images/icons8-css-480.png" class="icon-imgs">
-                            <img src="./Images/icons8-react-native-480.png" class="icon-imgs">
-                            <img src="./Images/icons8-typescript-480.png" class="icon-imgs">
-                            <img src="./Images/icons8-javascript-480.png" class="icon-imgs">
+                        <div className="icons ico-2">
+                            <img src={cssImage} className="icon-imgs"/>
+                                <img src="RobinReyes-Portfolio/src/assets/Images/icons8-react-native-480.png" className="icon-imgs"/>
+                                    <img src="RobinReyes-Portfolio/src/assets/Images/icons8-typescript-480.png" className="icon-imgs"/>
+                                        <img src={jssImage} className="icon-imgs"/>
                         </div>
                     </div>
 
-                </div>
-                <p class="bounce-me bounce-work"> My work</p>
-                <p class="scroll">(CLICK!)</p>
+            </div>
+            <p className="bounce-me bounce-work"> My work</p>
+            <p className="scroll">(CLICK!)</p>
 
-            </section>
+        </section>
 
-            <div class="socials-left flex">
-            <a href="https://github.com/robinreyescodes" class="hi" target="_blank">
+        <div className="socials-left flex">
+            <a href="https://github.com/robinreyescodes" className="hi" target="_blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 50 50"
                     width="30px"
-                    class="social"
+                    className="social"
                     height="50px"
                 >
                     <path
@@ -70,7 +65,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 50 50"
                     width="30px"
-                    class="social"
+                    className="social"
                     height="50px"
                 >
                     <path
@@ -83,7 +78,7 @@
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 50 50"
-                    class="social"
+                    className="social"
                     width="30px"
                     height="50px"
                 >
@@ -92,86 +87,89 @@
                     />
                 </svg>
             </a>
-            <div class="line1 line"></div>
-            </div>
-            <div class="socials-right flex">
+            <div className="line1 line"></div>
+        </div>
+        <div className="socials-right flex">
             <a id="email" href="mailto:robinreyes.code@gmail.com"
-                >robinreyes.code@gmail.com</a
+            >robinreyes.code@gmail.com</a
             >
 
 
-            <div class="line2 line"></div>
+            <div className="line2 line"></div>
         </div>
 
 
 
 
-            <section class="work">
-            <div class="blocks">
-                <div class="block">
+        <section className="work">
+            <div className="blocks">
+                <div className="block">
                     <a
                         href="https://robinreyescodes.github.io/buildspace-clone/"
                         target="_blank"
-                        ><video
-                            src="Video/buildspace.mov"
-                            loop
-                            autoplay
-                            width="350px"
-                            class="vid"
-                        ></video
+                    ><video
+                        src="RobinReyes-Portfolio/src/assets/Video/buildspace.mov"
+                        loop
+                        autoPlay
+                        width="350px"
+                        className="vid"
+                    ></video
                     ></a>
 
-                    <div class="block-info">
-                        <p class="block-header">buildspace.so</p>
-                        <p class="block-desc">
+                    <div className="block-info">
+                        <p className="block-header">buildspace.so</p>
+                        <p className="block-desc">
                             buildspace.so clone, animation practice
                         </p>
                     </div>
                 </div>
-                <div class="block">
+                <div className="block">
                     <a
                         href="https://robinreyescodes.github.io/2048-clone/"
                         target="_blank"
                     >
                         <video
-                            src="Video/2048_clone.mov"
+                            src="RobinReyes-Portfolio/src/assets/Video/2048_clone.mov"
                             loop
-                            autoplay
+                            autoPlay
                             width="350px"
-                            class="vid"
+                            className="vid"
                         ></video>
                     </a>
 
-                    <div class="block-info">
-                        <p class="block-header">2048</p>
-                        <p class="block-desc">
+                    <div className="block-info">
+                        <p className="block-header">2048</p>
+                        <p className="block-desc">
                             Recreating popular game by Gabriele Cirulli
                         </p>
                     </div>
                 </div>
-                <div class="block">
+                <div className="block">
                     <a
                         href="https://robinreyescodes.github.io/HumanraceWebsite/"
                     >
                         <video
-                            src="Video/humanrace.mov"
+                            src="RobinReyes-Portfolio/src/assets/Video/humanrace.mov"
                             loop
-                            autoplay
+                            autoPlay
                             width="350px"
-                            class="vid"
+                            className="vid"
                         ></video
-                    ></a>
+                        ></a>
 
-                    <p class="block-header">Humanrace</p>
-                    <p class="block-desc">
+                    <p className="block-header">Humanrace</p>
+                    <p className="block-desc">
                         my first clone of a website, humanrace
                     </p>
                 </div>
 
             </div>
-                <p class="bounce-me bounce-about"> Back to About </p>
-                <p class="scroll">(CLICK!)</p>
+            <p className="bounce-me bounce-about"> Back to About </p>
+            <p className="scroll">(CLICK!)</p>
         </section>
 
-    </body>
-</html>
+    </>
+  )
+}
+
+export default App
