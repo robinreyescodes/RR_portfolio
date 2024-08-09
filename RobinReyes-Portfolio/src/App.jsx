@@ -1,12 +1,15 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import buildspaceVideo from "./assets/Video/buildspace.mov"
+import applelandingVideo from './assets/Video/applelanding.mov'
+import humanraceVideo from './assets/Video/humanrace.mov'
 import logo from "../src/assets/Images/Me.jpg"
-import {cssImage, jssImage} from "./index.js";
+
+import * as images from "./index.js";
 import './App.css'
 
 function App() {
-
 
   return (
     <>
@@ -21,26 +24,90 @@ function App() {
                             recent graduate from San Francisco State University, receiving his Bachelors of Science degree
                             in Computer Science. </p>
                     </div>
-                    <div id="icons-slide">
-                        <div className="icons ico-1">
-                            <img src="RobinReyes-Portfolio/src/assets/Images/programing.png" className="icon-imgs"/>
-                                <img src="RobinReyes-Portfolio/src/assets/Images/icons8-python-480.png" className="icon-imgs"/>
-                                    <img src="RobinReyes-Portfolio/src/assets/Images/icons8-java-480.png" className="icon-imgs"/>
-                                        <img src="RobinReyes-Portfolio/src/assets/Images/icons8-html-480.png" className="icon-imgs"/>
+                    {/*<div id="icons-slide">*/}
+                    {/*    <div className="icons ico-1">*/}
+                    {/*        <img src={images.nodeImage} className="icon-imgs"/>*/}
+                    {/*            <img src={images.pyImage} className="icon-imgs"/>*/}
+                    {/*                <img src={images.javaImage} className="icon-imgs"/>*/}
+                    {/*                    <img src={images.htmlImage} className="icon-imgs"/>*/}
 
-                        </div>
-                        <div className="icons ico-2">
-                            <img src={cssImage} className="icon-imgs"/>
-                                <img src="RobinReyes-Portfolio/src/assets/Images/icons8-react-native-480.png" className="icon-imgs"/>
-                                    <img src="RobinReyes-Portfolio/src/assets/Images/icons8-typescript-480.png" className="icon-imgs"/>
-                                        <img src={jssImage} className="icon-imgs"/>
-                        </div>
-                    </div>
+                    {/*    </div>*/}
+                    {/*    <div className="icons ico-2">*/}
+                    {/*        <img src={images.cssImage} className="icon-imgs"/>*/}
+                    {/*            <img src={images.reactImage} className="icon-imgs"/>*/}
+                    {/*                <img src={images.twImage} className="icon-imgs"/>*/}
+                    {/*                    <img src={images.jssImage} className="icon-imgs"/>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
 
             </div>
-            <p className="bounce-me bounce-work"> My work</p>
-            <p className="scroll">(CLICK!)</p>
+        </section>
+        <section className="work">
+            <div className="blocks">
+                <div className="block">
+                    <a
+                        href="https://robinreyescodes.github.io/buildspace-clone/"
+                        target="_blank"
+                    ><video
+                        src={buildspaceVideo}
+                        playsInline
+                        loop
+                        autoPlay
+                        width="350px"
+                        className="vid"
+                    ></video
+                    ></a>
 
+                    <div className="block-info">
+                        <p className="block-header">buildspace.so</p>
+                        <p className="block-desc">
+                            buildspace.so clone, animation practice
+                        </p>
+                    </div>
+                </div>
+                <div className="block">
+                    <a
+                        href="https://apl-landing-pg.netlify.app/"
+                        target="_blank"
+                    >
+                        <video
+                            src={applelandingVideo}
+                            playsInline
+                            loop
+                            autoPlay
+                            width="400px"
+                            className="vid"
+                        ></video>
+                    </a>
+
+                    <div className="block-info">
+                        <p className="block-header">Apple Landing Page</p>
+                        <p className="block-desc">
+                            Recreating one of Apple's iconic landing pages.
+                        </p>
+                    </div>
+                </div>
+                <div className="block">
+                    <a
+                        href="https://robinreyescodes.github.io/HumanraceWebsite/"
+                    >
+                        <video
+                            src={humanraceVideo}
+                            playsInline
+                            loop
+                            autoPlay
+                            width="350px"
+                            className="vid"
+                        ></video
+                        ></a>
+
+                    <p className="block-header">Humanrace</p>
+                    <p className="block-desc">
+                        my first clone of a website, humanrace
+                    </p>
+                </div>
+
+            </div>
         </section>
 
         <div className="socials-left flex">
@@ -97,76 +164,6 @@ function App() {
 
             <div className="line2 line"></div>
         </div>
-
-
-
-
-        <section className="work">
-            <div className="blocks">
-                <div className="block">
-                    <a
-                        href="https://robinreyescodes.github.io/buildspace-clone/"
-                        target="_blank"
-                    ><video
-                        src="RobinReyes-Portfolio/src/assets/Video/buildspace.mov"
-                        loop
-                        autoPlay
-                        width="350px"
-                        className="vid"
-                    ></video
-                    ></a>
-
-                    <div className="block-info">
-                        <p className="block-header">buildspace.so</p>
-                        <p className="block-desc">
-                            buildspace.so clone, animation practice
-                        </p>
-                    </div>
-                </div>
-                <div className="block">
-                    <a
-                        href="https://robinreyescodes.github.io/2048-clone/"
-                        target="_blank"
-                    >
-                        <video
-                            src="RobinReyes-Portfolio/src/assets/Video/2048_clone.mov"
-                            loop
-                            autoPlay
-                            width="350px"
-                            className="vid"
-                        ></video>
-                    </a>
-
-                    <div className="block-info">
-                        <p className="block-header">2048</p>
-                        <p className="block-desc">
-                            Recreating popular game by Gabriele Cirulli
-                        </p>
-                    </div>
-                </div>
-                <div className="block">
-                    <a
-                        href="https://robinreyescodes.github.io/HumanraceWebsite/"
-                    >
-                        <video
-                            src="RobinReyes-Portfolio/src/assets/Video/humanrace.mov"
-                            loop
-                            autoPlay
-                            width="350px"
-                            className="vid"
-                        ></video
-                        ></a>
-
-                    <p className="block-header">Humanrace</p>
-                    <p className="block-desc">
-                        my first clone of a website, humanrace
-                    </p>
-                </div>
-
-            </div>
-            <p className="bounce-me bounce-about"> Back to About </p>
-            <p className="scroll">(CLICK!)</p>
-        </section>
 
     </>
   )
