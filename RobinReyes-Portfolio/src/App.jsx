@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import * as icons from "./util.js"
 import buildspaceVideo from "./assets/Video/buildspace.mov"
 import applelandingVideo from './assets/Video/applelanding.mov'
 import humanraceVideo from './assets/Video/humanrace.mov'
@@ -16,30 +14,14 @@ function App() {
         <section id="hero-sec">
             <div className="hero">
                 <img src={logo} className="object-cover h-[300px] w-[300px] rounded-full" />
-                    <div id="hero-info">
+                <div id="hero-info">
                         <p id="hero-header">Robin Reyes</p>
                         <p id="hero-about">is a software engineer with over 5 years of programming experience specializing in front-end technologies such as
                             JavaScript, React, HTML & CSS. Alongside his passion for web development, Robin is knowledgeable in other languages such as Java,
                             Python, C++ and SQL. He is a
                             recent graduate from San Francisco State University, receiving his Bachelors of Science degree
                             in Computer Science. </p>
-                    </div>
-                    {/*<div id="icons-slide">*/}
-                    {/*    <div className="icons ico-1">*/}
-                    {/*        <img src={images.nodeImage} className="icon-imgs"/>*/}
-                    {/*            <img src={images.pyImage} className="icon-imgs"/>*/}
-                    {/*                <img src={images.javaImage} className="icon-imgs"/>*/}
-                    {/*                    <img src={images.htmlImage} className="icon-imgs"/>*/}
-
-                    {/*    </div>*/}
-                    {/*    <div className="icons ico-2">*/}
-                    {/*        <img src={images.cssImage} className="icon-imgs"/>*/}
-                    {/*            <img src={images.reactImage} className="icon-imgs"/>*/}
-                    {/*                <img src={images.twImage} className="icon-imgs"/>*/}
-                    {/*                    <img src={images.jssImage} className="icon-imgs"/>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
-
+                </div>
             </div>
         </section>
         <section className="work">
@@ -53,7 +35,8 @@ function App() {
                         playsInline
                         loop
                         autoPlay
-                        width="350px"
+                        muted
+                        width="330px"
                         className="vid"
                     ></video
                     ></a>
@@ -63,6 +46,11 @@ function App() {
                         <p className="block-desc">
                             buildspace.so clone, animation practice
                         </p>
+                    </div>
+                    <div className="project-logos">
+                        <img src={icons.htmlImage} className="icons" alt="html-icon"/>
+                        <img src={icons.cssImage} className="icons" alt="css-icon"/>
+                        <img src={icons.jsImage} className="icons" alt="js-icon"/>
                     </div>
                 </div>
                 <div className="block">
@@ -75,7 +63,8 @@ function App() {
                             playsInline
                             loop
                             autoPlay
-                            width="400px"
+                            muted
+                            width="350px"
                             className="vid"
                         ></video>
                     </a>
@@ -83,8 +72,13 @@ function App() {
                     <div className="block-info">
                         <p className="block-header">Apple Landing Page</p>
                         <p className="block-desc">
-                            Recreating one of Apple's iconic landing pages.
+                            Apple's iconic landing page animations.
                         </p>
+                    </div>
+                    <div className="project-logos">
+                        <img src={icons.htmlImage} className="icons" alt="html-icon"/>
+                        <img src={icons.twImage} className="icons" alt="tw-icon"/>
+                        <img src={icons.reactImage} className="icons" alt="react-icon"/>
                     </div>
                 </div>
                 <div className="block">
@@ -96,7 +90,8 @@ function App() {
                             playsInline
                             loop
                             autoPlay
-                            width="350px"
+                            muted
+                            width="330px"
                             className="vid"
                         ></video
                         ></a>
@@ -105,8 +100,12 @@ function App() {
                     <p className="block-desc">
                         my first clone of a website, humanrace
                     </p>
+                    <div className="project-logos">
+                        <img src={icons.htmlImage} className="icons" alt="html-icon"/>
+                        <img src={icons.cssImage} className="icons" alt="css-icon"/>
+                        <img src={icons.jsImage} className="icons" alt="js-icon"/>
+                    </div>
                 </div>
-
             </div>
         </section>
 

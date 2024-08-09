@@ -163,7 +163,6 @@
 }
 
 #email {
-
   writing-mode: vertical-lr;
   transform: translateY(0);
   transition:
@@ -195,6 +194,16 @@
   padding: 2px;
   overflow: hidden;
   transition: all 0.4s ease;
+}
+
+.project-logos {
+  display:flex;
+  justify-content: center;
+  gap:20px;
+}
+
+.icons {
+  width:40px;
 }
 
 .block:hover{
@@ -314,45 +323,52 @@
 
 @media (max-width: 850px) {
   .socials-left {
-    padding-top:40px;
-    position:relative;
+    position:absolute;
     top:0;
+    display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width:100%;
+    gap:50px;
+    justify-content: center;
+    width:100vw;
+    fill: lightseagreen;
+    margin-top:20px;
   }
-  .socials-right {
+
+  #email {
     display:none;
+
   }
 
-
-  .socials-left a {
-    fill:lightseagreen;
+  .hero {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width:100vw;
+    align-items: center;
   }
 
   #hero-header {
-    font-size:2rem;
+    font-size:3rem;
   }
 
   #hero-about {
-    max-width:650px;
+    max-width:500px;
     font-size:0.9rem;
-
-  }
-
-  #icons-slide {
-    width:100%;
-    overflow:hidden;
+    padding:4px;
   }
 
   .blocks {
-    margin-top:40px;
-    height:1000px;
+    margin-top:20px;
+    height:1200px;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+  }
+
+  .block {
+    height:1000px;
   }
 
   .line {
@@ -364,27 +380,6 @@
   }
 }
 
-@media (max-width:660px) {
-  #hero-header {
-    margin-top:10px;
-    font-size:4rem;
-  }
-  #hero-about {
-    font-size: 1rem;
-    max-width:400px;
-    margin-top: 20px;
-  }
-  #robins-photo {
-    width:200px;
-    height:200px;
-  }
-
-  .icon-imgs {
-    display:none;
-  }
-
-
-}
 
 
 @keyframes yo {
